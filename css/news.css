@@ -338,6 +338,27 @@ color: rgb(146, 145, 145);
 @media(max-width: 739px){
     .row{
         display: block;
+        padding: 0 16px;
+    }
+
+    .blog-container-post {
+        overflow: hidden;
+    }
+    .blog-container-post img{
+        width: 100%;
+    }
+
+    .blog-container-sidebar{
+        position: relative;
+        padding-left: 0;
+    }
+
+    .blog-container-sidebar input{
+        width: 100%;
+    }
+
+    .blog-container-sidebar i{
+        top: 4px;
     }
 }
 
