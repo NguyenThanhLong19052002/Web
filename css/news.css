@@ -11,6 +11,10 @@ body{
     
 }
 
+ul{
+    display: block;
+}
+
 .opacity6{
 opacity: 0.6;
 }
@@ -44,7 +48,7 @@ opacity: 0.6;
    
 }
 
-.slider-text h1{
+.slider-text{
     color: white;
     font-size: 4.5rem;
     display: grid;
@@ -363,3 +367,6 @@ color: rgb(146, 145, 145);
 }
 
 
+#header{
+    display: none;
+}
