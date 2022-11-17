@@ -7,6 +7,7 @@ body{
    margin: 0;
    box-sizing: border-box;
     text-decoration: none;
+    overflow-x: hidden;
     
 }
 
@@ -14,31 +15,36 @@ body{
 opacity: 0.6;
 }
 
-.w-65{
-    width: 65%;
+.flex-65{
+    flex: 6.5;
 }
 
-.w-35{
-    width: 35%;
+.flex-35{
+    flex: 3.5;
 }
 
 .slider{
-    background-image: url(../img/img_news/blog_background.jpg);
-    background-color: #cccccc;
-    height: 100vh;
-    background-position: bottom center;
+    height: 100%;
+}
+
+.slider-img{
+    background-image: url('../img/img_news/blog_background.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: bottom center;
     background-attachment: fixed;
-    position: relative;
-    margin-top: -22px;
+    background-size: cover;
+    height: 150vh;
 }
 
 .slider-text{
     position: absolute;
-    top: 50%;
-    transform:translateY(-100%) translateX(-50%);
+    top: 55%;
     left: 50%;
+    transform: translateX(-50%);
+   
+}
+
+.slider-text h1{
     color: white;
     font-size: 4.5rem;
     display: grid;
@@ -78,6 +84,8 @@ opacity: 0.6;
 
 .blog-container{
     position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 /* row1 */
 .blog-container-post{
@@ -276,6 +284,61 @@ color: rgb(146, 145, 145);
     font-weight: 500;
     color: #929191;
     justify-content: right;
+}
+
+/* responsive */
+/* ipad */
+@media(min-width: 740px) and ( max-width: 1023px){
+    .row{
+        display: inline-block;
+    }
+
+    .col{
+        float: left;
+    }
+    
+    .w-60{
+        width: 60%;
+    }
+
+    .w-30{
+        width: 30%;
+    }
+
+    .blog-container-post {
+        overflow: hidden;
+        margin: 0 16px;
+    }
+
+
+    .blog-container-sidebar {
+        padding-left: 0;
+        position: relative;
+    }
+
+    .blog-container-sidebar input {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .blog-container-sidebar i{
+        right: 0;
+    }
+
+    .sidebar-latest-post{
+        overflow: hidden;
+    }
+
+    .latest-post {
+        display: block;
+    }
+
+}
+
+@media(max-width: 739px){
+    .row{
+        display: block;
+    }
 }
 
 
