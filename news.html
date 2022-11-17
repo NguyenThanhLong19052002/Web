@@ -4,25 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/news.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
-  
+    <!-- header -->
+    <div id="header">
+
+        <div class="nav-container">
+            <div class="head-nav">
+                <div class="nav-bar-left">
+                        <ul>
+                            <li class="phone">+84 375421xxx</li>
+                            <li class="icon"><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                            <li class="icon"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li class="icon"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li class="icon"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                </div>
+                <div class="nav-bar-right">
+                        <ul>
+                            <li><a href="" class="login">LOGIN</a></li>
+                            <li><a href="" class="register"> REGISTER</a></li>
+                        </ul>
+                </div>
+            </div>
+            <div class="main-nav-bar">
+                <div class="logo">
+                    <img src="./img/logo.jpg" alt="du lịch vòng quanh Trái Đất" width="400px" height="auto"> 
+                    <span class="logo-head">TravelLong</span> 
+                </div>
+                <div class="nav-bar">
+                    <ul class="upper-target-ul">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about-us.html">ABOUT US</a> </li>
+                        <li><a href="offer.html">OFFERS</a> </li>
+                        <li><a href="news.html">NEWS</a> </li>
+                        <li><a href="contact.html">CONTACT</a> </li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input class="search-bar" type="text">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider -->
 <div class="slider">
-    <div class="slider-img">
-    </div>
-    <div class="slider-text">
-        <h1>The BLOG</h1>
-    </div>
+    <div class="slider-img"></div>
+    <h1 class="slider-text">THE BLOG</h1>
 </div>
-
+<!-- blog -->
 <div class="blog">
-    <div class="blog-container">            
+    <div class="grid wide custom">
+        <div class="blog-container">
+            <div class="grid wide custom">
 
+                
+<!-- row1 -->
                 <div class="row">
-                    <div class="blog-container-post flex-65 col w-60">
+                    <div class="blog-container-post flex-65 w-60 col">
                         <div class="time-post-blog">
                             <span>01</span>
                             <span>July, 2017</span>
@@ -30,7 +78,7 @@
                         <img src="./img/img_news/blog_1.jpg" alt="">
                     </div>
 
-                    <div class="blog-container-sidebar flex-35 col w-30">
+                    <div class="blog-container-sidebar flex-35 w-30 col">
                         <input type="text">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <div class="container-sidebar-year">
@@ -43,9 +91,9 @@
                         </div>
                     </div>
                 </div>
-
+<!-- row2 -->
                 <div class="row margin-top">
-                    <div class="blog-container-post flex-65 col w-60">
+                    <div class="blog-container-post flex-65 w-60 col">
                         <ul>
                             <li><a href="#">by Lore Papp</a></li>
                             <li><a href="#">Uncategorized</a></li>
@@ -59,7 +107,7 @@
                     </div>
 
 
-                    <div class="blog-container-sidebar flex-35 col w-30">
+                    <div class="blog-container-sidebar flex-35 w-30 col">
                        <div class="blog-container-sidebar--list">
                         <span>
                             Categories
@@ -77,9 +125,9 @@
                     </div>
                 </div>
 
-
+                <!-- row3 -->
                 <div class="row margin-top">
-                    <div class="blog-container-post flex-65 col w-60">
+                    <div class="blog-container-post flex-65 w-60 col">
                         <div class="time-post-blog">
                             <span>01</span>
                             <span>July, 2017</span>
@@ -87,11 +135,10 @@
                         <img src="./img/img_news/blog_1.jpg" alt="">
                     </div>
 
-                    <div class="sidebar-latest-post flex-35 col w-30">
+                    <div class="sidebar-latest-post flex-35 w-30 col">
                          <span>
                              Latest Post
                          </span>
-
 
                          <div class="latest-posts-container">
                             <div class="latest-post">
@@ -109,6 +156,7 @@
                                 </div>
                             </div>
                          </div>
+
 
                          <div class="latest-posts-container">
                             <div class="latest-post">
@@ -131,9 +179,10 @@
 
                 </div>
 
+                <!-- row 4 -->
 
                 <div class="row margin-top">
-                    <div class="blog-container-post flex-65 col w-60">
+                    <div class="blog-container-post flex-65 w-60 col">
                         <ul>
                             <li><a href="#">by Lore Papp</a></li>
                             <li><a href="#">Uncategorized</a></li>
@@ -146,7 +195,7 @@
                         <a href="#" class="blog-container-post--btn">READ MORE</a>
                     </div>
 
-                    <div class="blog-container-sidebar flex-35 col w-30">
+                    <div class="blog-container-sidebar flex-35 w-30 col">
                         <div class="blog-container-sidebar--list">
                             <span>Instagram</span>
                             <div class="blog-container-sidebar--list-img">
@@ -161,8 +210,122 @@
                         </div>
                     </div>
                 </div>
-     </div>
-    
+
+                <div class="row margin-top"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FOOTER -->
+<div id="footer">
+    <div class="footer-main">
+        <div class="footer-media">
+            <div class="footer-logo">
+                <img src="./img/logo.jpg" alt="du lịch vòng quanh Trái Đất" width="200px" height="auto"> 
+                <span class="footer-logo-head">TravelLong</span> 
+            </div>
+            <p>Giữa không gian thanh bình và yên tĩnh, Đà Lạt hiện lên với khung cảnh mộng mơ và nên thơ nhờ cái lạnh cao nguyên ban đêm, sương mù buổi sáng cùng dải rừng thông bạt ngàn bao quanh. Chắc hẳn chỉ nhắc đến đây thôi cũng đủ để làm biết bao tâm hồn tín đồ du lịch phải háo hức trước vẻ đẹp thiên nhiên nơi đây. Hãy cùng tour du lịch đến Đà Lạt để tận hưởng nhiều trải nghiệm thú vị về địa điểm này nhé!</p>
+            <ul>
+                <li class="icon"><a href=""><i class="fa-brands fa-pinterest-p"></i></a></li>
+                <li class="icon"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="icon"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="icon"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+        <!-- Lấy từ phần blog -->
+        <div class="footer-blog">
+                <h3>BLOG POSTS</h3>
+                <div>
+                    <div class="blog-post-logo-container">
+                        <img src="./img/quang-binh.jpg"
+                        alt="Hang động tại Quảng Bình" class="footer-blog-img">
+                    </div>
+                    
+                    <div>
+                        <h5>Quảng Bình</h5>
+                        <h5>10/10/2022</h5>
+                    </div>
+                </div>
+                <div>
+                    <div class="blog-post-logo-container">
+                        <img src="./img/da-nang.jfif"
+                        alt="Cầu rồng Đà Nẵng lúc trời tối" class="footer-blog-img">
+                    </div>
+                    
+                    <div>
+                        <h5>Đà Nẵng</h5>
+                        <h5>11/11/2022</h5>
+                    </div>
+                </div>
+                <div>
+                    <div class="blog-post-logo-container">
+                        <img src="./img/da-lat.jpg"
+                        alt="Đà Lạt đêm sương" class="footer-blog-img">
+                    </div>
+                    
+                    <div>
+                        <h5>Đà Lạt</h5>
+                        <h5>12/12/2022</h5>
+                    </div>
+                </div>
+        </div>
+        <div class="footer-tag">
+            <h3>TAGS</h3>
+            <div>
+                <ul>
+                    <li><a href="#">design</a></li>
+                    <li><a href="#">fashion</a></li>
+                    <li><a href="#">music</a></li>
+                    <li><a href="#">video</a></li>
+                    <li><a href="#">party</a></li>
+                    <li><a href="#">photography</a></li>
+                    <li><a href="#">adventure</a></li>
+                    <li><a href="#">travel</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <h3>CONTACT INFO</h3>
+            <div class="contact-info-item">
+                <div class="contact-info-icon">
+                    <img src="https://preview.colorlib.com/theme/travelix/images/placeholder.svg" alt="icon">
+                </div>
+                <div class="contact_info_text">Khu phố 6, Phường Linh Trung, Thành phố Thủ Đức, Thành phố Hồ Chí Minh</div>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-info-icon">
+                    <img src="https://preview.colorlib.com/theme/travelix/images/phone-call.svg" alt="icon">
+                </div>
+                <div class="contact_info_text">0320 0226 0810</div>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-info-icon">
+                    <img src="https://preview.colorlib.com/theme/travelix/images/message.svg" alt="icon">
+                </div>
+                <div class="contact_info_text">lattungbairacdekiemxacem@gmail.com</div>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-info-icon">
+                    <img src="https://preview.colorlib.com/theme/travelix/images/planet-earth.svg" alt="icon">
+                </div>
+                <div class="contact_info_text">www.colorlib.com</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>Copyright ©2022 All rights reserved | This template is made with<i class="fa fa-heart-o"></i> by <span>Colorlib</span></p>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about-us.html">ABOUT US</a></li>
+            <li><a href="offer.html">OFFERS</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
 </div>
 </body>
 </html>
