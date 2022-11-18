@@ -1,12 +1,12 @@
 
-const $ = document.querySelector.bind(document);
 
-const btnClose = $('.btn-close-form');
 
-const btnLogin = $('.login');
+const btnClose = document.querySelector('.btn-close-form');
 
-const modalSignUp = $('.modal-sign_up');
+const btnLogin = document.querySelector('.login');
 
-btnLogin.onclick = function(){
-    modalSignUp.classList.add('open');
-}
+const modalSignUp = document.querySelector('.modal-sign_up');
+
+btnLogin.addEventListener('click',function(){
+    modalSignUp.style.display = 'block';
+})

@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    height: 500Apx;
-    display: flex;
-}
-
 .sign_up-container{
     width: 800px;
     margin: auto;
