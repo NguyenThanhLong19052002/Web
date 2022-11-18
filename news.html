@@ -29,8 +29,8 @@
                 </div>
                 <div class="nav-bar-right">
                         <ul>
-                            <li><a href="" class="login">LOGIN</a></li>
-                            <li><a href="" class="register"> REGISTER</a></li>
+                            <li><a href="#" class="login">LOGIN</a></li>
+                            <li><a href="#" class="register"> REGISTER</a></li>
                         </ul>
                 </div>
             </div>
@@ -396,6 +396,49 @@
       </div>
 </div>
 
+<!-- login form -->
+<div class="modal-login">
+
+    <div class="sign_up-container login">
+        <div class="btn-close-form">
+            <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+          </div>
+        <div class="sign_up-container_form">
+                <form action="" method="POST" class="form" id="login-form">
+                  <span class="form-title">LOG IN</span>
+    
+    
+                      <div class="form-group">
+                        <label for="email" class="form-label">Email</label> 
+                        <input id="email" name="email" type="email" placeholder="EX: 123@gmail.com" class="form-control">
+                        <span class="form-message"></span>
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input id="password" name="password" type="password" class="form-control">
+                        <span class="form-message"></span>
+                      </div>
+    
+                      <div class="form-group">
+                        <div class="horizontal">
+                            <input name="remember" type="checkbox" value="yes" class="form-control">
+                          <label for="">Remember me</label>
+                        </div>
+                      </div>
+    
+                      <button class="form-submit">Log In</button>
+    
+                      <div class="footer-sign_in">
+                        <p><a href="#">Forgot Password</a></p>
+                        <p><a href="#">Sign Up</a></p>
+                      </div>
+                </form> 
+        </div>
+    </div>
+</div>
+
+
 <script src="./javascript/FormValidator.js"></script>
     <script>
       Validator({
@@ -431,6 +474,31 @@
           }
       });
     </script>
+    <script>
+        Validator({
+            form:'#login-form',
+  
+            formGroup: '.form-group',
+  
+            errorSelector:'.form-message',  
+            
+            rules:[
+  
+                Validator.isRequired('#email','Please enter this field'),
+  
+                Validator.isEmail('#email','This field must be email'),
+  
+                Validator.isRequired('#password','Please enter this field'),
+  
+                Validator.minLength('#password',6,'Passwords must be at least 6 characters'),
+  
+            ],
+  
+            onSubmit:function(data){
+              console.log(data);
+            }
+        });
+      </script>
 <script src="./javascript/form.js"> </script>
 </body>
 </html>

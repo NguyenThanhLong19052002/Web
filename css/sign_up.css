@@ -137,7 +137,8 @@
     cursor: pointer;
   }
 
-  .modal-sign_up{
+  .modal-sign_up,
+  .modal-login{
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     position: fixed;
@@ -145,6 +146,16 @@
     top: 16px;
     height: 100%;
     display: none;
+  }
+
+  .modal-login{
+    padding: 100px;
+  }
+
+  .footer-sign_in{
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px
   }
 
   .open{
