@@ -15,6 +15,9 @@
     <!-- icon trong fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/b479d3cb73.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/sign_up.css">
     <title>Home</title>
 </head>
 
@@ -710,6 +713,176 @@
             integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
             crossorigin="anonymous"></script>
         <script src="./javascript/main.js"></script>
+
+
+<!-- form sign up -->
+<div class="modal-sign_up">
+
+    <div class="sign_up-container">
+        <div class="btn-close-form">
+          <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+        </div>
+          <div class="sign_up-container_form">
+              <div class="sign_up-form">
+                
+    
+    
+                  <form action="" method="POST" class="form" id="sign_up-form">
+                    <span class="form-title">SIGN UP</span>
+    
+                    
+                      <div class="form-group">
+                          <label for="fullname" class="form-label">Full name</label> 
+                          <input id="fullname" name="fullname" type="text" placeholder="EX: John Cena" class="form-controls">
+                          <span class="form-message"></span>
+                        </div>
+    
+                        <div class="form-group">
+                          <label for="email" class="form-label">Email</label> 
+                          <input id="email" name="email" type="email" placeholder="EX: 123@gmail.com" class="form-controls">
+                          <span class="form-message"></span>
+                        </div>
+    
+                        <div class="form-group">
+                          <label for="password" class="form-label">Password</label>
+                          <input id="password" name="password" type="password" class="form-controls">
+                          <span class="form-message"></span>
+                        </div>
+    
+                        <div class="form-group">
+                          <label for="password_confirmation" class="form-label">Confirm password</label>
+                          <input id="password_confirmation" name="password_confirmation" type="password" class="form-controls">
+                          <span class="form-message"></span>
+                        </div>
+    
+                        <div class="form-group">
+                          <label for="genders" class="form-label">Gender</label>
+                          <div class="horizontal">
+                          <label for=""> Male</label>
+                          <input name="gender" type="radio" value="male" class="form-controls">
+                          </div>
+                          <div class="horizontal">
+                            <label for="">Female</label>
+                          <input name="gender" type="radio" value="female" class="form-controls">
+                          </div>
+                          <div class="horizontal">
+                            <label for="">Other</label>
+                          <input name="gender" type="radio" value="other" class="form-controls">
+                          </div>
+                          <span class="form-message"></span>
+                        </div>
+    
+                        <button class="form-submit">Sign Up</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+</div>
+
+<!-- login form -->
+<div class="modal-login">
+
+    <div class="sign_up-container login">
+        <div class="btn-close-form">
+            <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+          </div>
+        <div class="sign_up-container_form">
+                <form action="" method="POST" class="form" id="login-form">
+                  <span class="form-title">LOG IN</span>
+    
+    
+                      <div class="form-group">
+                        <label for="email" class="form-label">Email</label> 
+                        <input id="email" name="email" type="email" placeholder="EX: 123@gmail.com" class="form-controls">
+                        <span class="form-message"></span>
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input id="password" name="password" type="password" class="form-controls">
+                        <span class="form-message"></span>
+                      </div>
+    
+                      <div class="form-group">
+                        <div class="horizontal">
+                            <input name="remember" type="checkbox" value="yes" class="form-controls">
+                          <label for="">Remember me</label>
+                        </div>
+                      </div>
+    
+                      <button class="form-submit">Log In</button>
+    
+                      <div class="footer-sign_in">
+                        <p><a href="#">Forgot Password</a></p>
+                        <p><a href="#">Sign Up</a></p>
+                      </div>
+                </form> 
+        </div>
+    </div>
+</div>
+
+
+<script src="./javascript/FormValidator.js"></script>
+    <script>
+      Validator({
+          form:'#sign_up-form',
+
+          formGroup: '.form-group',
+
+          errorSelector:'.form-message',
+          
+          rules:[
+              Validator.isRequired('#fullname','Please enter this field'),
+
+              Validator.isRequired('#email','Please enter this field'),
+
+              Validator.isEmail('#email','This field must be email'),
+
+              Validator.isRequired('#password','Please enter this field'),
+
+              Validator.minLength('#password',6,'Passwords must be at least 6 characters'),
+
+              Validator.isRequired('#password_confirmation','Please enter this field'),
+
+              Validator.isConfirmed('#password_confirmation',function(){
+                return document.querySelector('#sign_up-form #password').value
+              },'Confirm password incorrect!'),
+
+              Validator.isRequired('input[name="gender"]','Please enter this field'),
+
+          ],
+
+          onSubmit:function(data){
+            console.log(data);
+          }
+      });
+    </script>
+    <script>
+        Validator({
+            form:'#login-form',
+  
+            formGroup: '.form-group',
+  
+            errorSelector:'.form-message',  
+            
+            rules:[
+  
+                Validator.isRequired('#email','Please enter this field'),
+  
+                Validator.isEmail('#email','This field must be email'),
+  
+                Validator.isRequired('#password','Please enter this field'),
+  
+                Validator.minLength('#password',6,'Passwords must be at least 6 characters'),
+  
+            ],
+  
+            onSubmit:function(data){
+              console.log(data);
+            }
+        });
+      </script>
+<script src="./javascript/form.js"> </script>
 </body>
 
 </html>
