@@ -36,6 +36,24 @@ body{
     font-size: 72px;
     text-transform: uppercase;
 }
+@media (max-width: 1200px) {
+    .about-us-title h1{
+        font-size: 60px;
+        white-space: nowrap;
+    }
+}
+@media (max-width: 768px) {
+    .about-us-title h1{
+        font-size: 48px;
+        white-space: nowrap;
+    }
+}
+@media (max-width: 576px) {
+    .about-us-title h1{
+        font-size: 30px;
+        white-space: nowrap;
+    }
+}
 
 
 .intro{
