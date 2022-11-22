@@ -57,7 +57,7 @@ body{
     font-size: 1.4rem;
   }
   
-  .form-control {
+  .form-controls {
     height: 40px;
     padding: 8px 12px;
     border: 2px solid #b3b3b3;
@@ -66,11 +66,11 @@ body{
     font-size: 1.4rem;
   }
   
-  .form-control:hover {
+  .form-controls:hover {
     border-color: #1dbfaf;
   }
   
-  .form-group.invalid .form-control {
+  .form-group.invalid .form-controls {
     border-color: #f33a58;
   }
   

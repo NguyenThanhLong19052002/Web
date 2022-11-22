@@ -1,91 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body,html{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    height: 100%;
-    width: 100%; 
-    overflow-x: hidden;
-}
-a{
-    text-decoration: none;
+.caption {
+    position: absolute;
     color: white;
-    margin-left: 10px;
-}
-ul{
-    list-style-type: none;
-    display: flex;
-    gap: 10px;
-}
-i:hover,.login:hover,.register:hover{
-    color: rgb(233, 114, 71);
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
 }
 
-.upper-options >h1{
-    position: absolute;
-    top: -25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 60px;
+.carousel_explore_btn {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1rem;
+    text-align: center;
     color: white;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, orange, #8d4fff);
+    transition: background-image 0.5s linear;
+    border-image-slice: 1;
+}
+
+.carousel_explore_btn:hover {
+    background-image: linear-gradient(to right, #8d4fff, orange);
 }
 /* _____________OPTION AND FORM TOP________ */
-.options-form{
+.option_form {
+    height: 10rem;
+    background-image: linear-gradient(to right, orange, #8d4fff);
     display: flex;
-    flex-direction:column;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
     position: relative;
     bottom: 103px;
-    top: -10px;
 }
-.upper-options{
-    height: 90px;
-    background-color: white;
-    border-top-right-radius:60px ;
-    border-top-left-radius:60px ;
-    display: grid;
-    grid-template-columns: 160px 170px 160px 150px 160px 160px;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 100;
+.upper_form {
+    position: absolute;
+    height: 5rem;
+    top: -5rem;
 }
 
-
-
-.upper-options button{
+.upper_form button {
     height: inherit;
-    padding: 50px;
-    border: 0;
-    width:max-content;
+    padding: 2rem;
+    width: max-content;
     cursor: pointer;
+    background-color: white;
+    border: none;
+    margin: 0 -4px;
+    font-size: 1.2rem;
 }
-.upper-options i:hover{
-    color: white;
-}
-.upper-options button:hover{
+
+.upper_form button:hover {
     background-color: #fa9e1b;
-    height: inherit;
-    padding: 50px;
     color: white;
 }
-.first-button{
-    border-top-left-radius:60px ;
+
+.upper_form button:first-child {
+    border-top-left-radius: 50px;
 }
-.last-button
-{
-    border-top-right-radius:60px ;
+
+.upper_form button:last-child {
+    border-top-right-radius: 50px;
 }
 .form-div{
-    height: 400px;
+    height: 300px;
     background-image: linear-gradient(to right, orange, #8d4fff);
     display: flex;
     justify-content: center;
     align-items: center;
     position:relative;
     bottom: 5px;
-    margin-top: 15px;
 }
 
 .top-form{
@@ -93,7 +78,8 @@ i:hover,.login:hover,.register:hover{
     gap: 2%;
     width: 80%;
     color: white;
-    font-size: 13px;
+    font-size: 20px;
+    ;
 }
 
 .destination-form .destination-box1>input{
@@ -128,22 +114,9 @@ i:hover,.login:hover,.register:hover{
     justify-content: space-between;
 }
 .radio-box span{
-    font-size: 10px;
-    margin-left: 10px;
-    
+    font-size: 15px;
+    padding-left: 10px;  
 } 
-.load-more{
-    color: white;
-    display: none;
-}
-.load-more>.loadMore{
-    display: inline;
-    cursor: pointer;
-}
-
-.extra_options{
-    display: none;
-}
 
 .destination-box6{
     width: 150%;
