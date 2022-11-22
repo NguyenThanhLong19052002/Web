@@ -8,7 +8,7 @@ body{
    box-sizing: border-box;
     text-decoration: none;
     overflow-x: hidden;
-    
+    background-color: #fff !important;
 }
 
 ul{
@@ -45,7 +45,7 @@ opacity: 0.6;
     top: 55%;
     left: 50%;
     transform: translateX(-50%);
-   
+   text-align: center;
 }
 
 .slider-text{
@@ -64,14 +64,6 @@ opacity: 0.6;
 .grid.wide{
     max-width: 1200px;
     margin: 0 auto;;
-}
-
-.wide{
-
-}
-
-.custom{
-
 }
 
 .row{
@@ -95,6 +87,7 @@ opacity: 0.6;
 .blog-container-post{
     position: relative;
 }
+
 
 .time-post-blog{
     color: white;
@@ -366,6 +359,9 @@ color: rgb(146, 145, 145);
     }
 }
 
+@media(min-width:1024px){
+   
+}
 
 /* #header{
     display: none;
