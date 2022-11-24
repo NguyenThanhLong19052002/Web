@@ -89,10 +89,34 @@ body{
     border-radius: 27px;
     overflow: hidden;
 }
-
+.container-form button:hover{
+    background-color: #73518f;
+}
+.form_submit_button span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 5.75px;
+    height: 5.63px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 2px;
+    margin-top: -2px;
+}
+.form_submit_button span:nth-child(2) {
+    opacity: .6;
+}
+.form_submit_button span:last-child {
+    opacity: .4;
+}
+.form_submit_button span:first-child {
+    margin-left: 4px;
+}
 /* CONTACT CONTENT */
 .contact-content{
     margin-top: 7rem;
+}
+.contact-content .img img{
+    max-width: 100%;
 }
 .contact-content .contact__about--logo a{
     color: black;
@@ -119,6 +143,13 @@ body{
     padding: 10px;
     border-radius: 50%;
     color: #fa9e1b;
+}
+.contact-content ul li a ion-icon{
+    transition-duration: 0.3s;
+}
+.contact-content ul li a ion-icon:hover, .contact-content ul li a ion-icon:active{
+    transform: scale(1.2);
+    cursor: pointer;
 }
 .contact-content ul li{
     margin-right: 5px;
