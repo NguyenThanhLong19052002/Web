@@ -68,8 +68,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position:relative;
-    bottom: 5px;
+    position: relative;
 }
 
 .top-form{
@@ -78,7 +77,7 @@
     width: 80%;
     color: white;
     font-size: 20px;
-    ;
+    font-weight: bolder;
 }
 
 .destination-form .destination-box1>input{
@@ -109,7 +108,9 @@
 .destination-radio-buttons{
     margin-top: 10px;
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 150px 150px 180px 150px;
+    grid-template-rows: 50px 50px;
     justify-content: space-between;
 }
 .radio-box span{
@@ -129,139 +130,20 @@
     color: white;
     font-size: 15px;
     border-radius: 30px;
+    font-weight: bolder;
     background-color: rgb(65, 2, 65);
     border: none;
     position: relative;
-    top: 30px;
-    right: 560px;
+    top: 3px;
+    right: -187px;
+}
+.destination-form .destination-box6>input:hover {
+    opacity: 0.7;
 }
 .options-and-form-box{
     display: none;
 }
 
-/*________________________________ FILTER___________________________ */
-
-.filter-div{
-    margin-top: 10px;
-}
-.filters >ul{
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin-left: 10%;
-    position: relative;
-
-}
-.filters ul li{
-    padding: 13px;
-    border: 2px solid rgb(196, 187, 187);
-    font-size: 13px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.filters ul li i{
-margin-left: 100px;
-}
-.sub-menu1{
-    display: none;
-}
-.sub-menu2{
-    display: none;
-}
-.sub-menu3{
-    display: none;
-}
-.sub-menu4{
-    display: none;
-}
-.sub-menu5{
-    display: none;
-}
-.filters ul :hover .sub-menu1{
-    display: block;
-    position: absolute;
-    top: 45px;
-    left: 0;
-    /* z-index: 50; */
-    background-color: white;
-}
-.sub-menu1 > ul{
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
-.sub-menu1 > ul >li{
-    padding: 13px;
-    width: 183px;
-}
-.filters ul :hover .sub-menu2{
-    display: block;
-    position: absolute;
-    top:45px;
-    left: 193px;
-    z-index: 50;
-    background-color: white;
-}
-.sub-menu2 > ul{
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
-.sub-menu2 > ul >li{
-    padding: 13px;
-    width: 215px;
-}
-.filters ul :hover .sub-menu3{
-    display: block;
-    position: absolute;
-    top:45px;
-    left: 418px;
-    z-index: 50;
-    background-color: white;
-}
-.sub-menu3 > ul{
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
-.sub-menu3 > ul >li{
-    padding: 13px;
-    width: 186px;
-}
-.filters ul :hover .sub-menu4{
-    display: block;
-    position: absolute;
-    top:45px;
-    left: 614px;
-    z-index: 50;
-    background-color: white;
-}
-.sub-menu4 > ul{
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
-.sub-menu4 > ul >li{
-    padding: 13px;
-    width: 321px;
-}
-.filters ul :hover .sub-menu5{
-    display: block;
-    position: absolute;
-    top:45px;
-    left: 945px;
-    z-index: 50;
-    background-color: white;
-}
-.sub-menu5 > ul{
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
-.sub-menu5 > ul >li{
-    padding: 13px;
-    width: 207px;
-}
 
 /* __________________________CARDS_____________________________________ */
 
@@ -269,12 +151,33 @@ margin-left: 100px;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    padding-left: 222px;
-    margin-top: 100px;
+    padding-top: 100px;
+    align-items: center;
+}
+.wrap-btn {
+    width: 96rem;
+}
+.btn-group {
+    float: left;
+}
+.style-btn {
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+    padding: 20px;
+}
+.mb-6 {
+    margin-bottom: 6rem;
+}
+.mr-2 {
+    margin-right: 2rem;
+}
+.w-20 {
+    width: 29rem;
 }
 .offer-desciption{
-    font-size: 13px;
-    width: 90%;
+    font-size: 15px;
+    width: 1000px;
     line-height: 25px;
 }
 .offer-icon1 {
@@ -297,7 +200,7 @@ margin-left: 100px;
 }
 .box1 img{
     height: 350px;
-    width: 250px;
+    width: 500px;
 }
 
 .all-grid{
@@ -318,10 +221,10 @@ margin-left: 100px;
     border-radius: 30px;
     background-color: rgb(65, 2, 65);
     border: none;
-    margin-top: 13%;
-    margin-bottom: 5%;
     cursor: pointer;
-    padding: 15px;
+    position: absolute;
+    right: 0;
+    bottom: 65px;
 }
 .book-now:hover{
     background-image: linear-gradient(to right,#8d4fff, orange);
@@ -358,24 +261,23 @@ margin-left: 100px;
     color: #d8d7d1 ;
     font-size: 10px;
 }
-.point-div{
-    background-color: blue;
+.box2 {
     position: relative;
-    left: 70%;
-    bottom: 53px;
+}
+.point-div{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .review-point{
     display: flex;
     gap: 15px;
-    position: absolute ;
 }
 .review-point h1{
     background-color: #fa9e1b;
     padding: 10px;
     font-size: 20px;
     border-radius: 50%;
-    margin-right: 100px;
-
 }
 .review-point p{
     color: thistle;
