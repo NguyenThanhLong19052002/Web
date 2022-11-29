@@ -70,6 +70,7 @@ body {
 .logo-head{
     letter-spacing: 4px;
     margin-left: 16px;
+    margin-top: -20px;
 }
 
 .search {
@@ -93,25 +94,26 @@ body {
     color: rgb(233, 114, 71);
 }
 
-.burgur{
-    cursor: pointer;
+.menu-icon{
     display: none;
 }
-.burgur div{
-    width: 20px;
-    height: 3px;
-    border-radius: 10px;
-    background-color: white;
-    margin: 3px;
-}
+
 
 
 /* RESPONSIVE */
 
-/* @media screen and (max-width:1036px) {
-    .burgur{
+@media screen and (max-width:1036px) {
+
+    .topnav li a {
+        display: none;
+    }
+
+    .menu-icon{
         display: block;
         cursor: pointer;
         z-index: 2;
+        font-size: 16px;
+        margin-top: -16px;
     }
-} */
+
+}
